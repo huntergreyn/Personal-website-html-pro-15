@@ -14,9 +14,9 @@ a {
 
   /* Header */
 
-/* #header {
-   position: fixed;
-} */
+ #header {
+   position: sticky;
+} 
 
 #header img {
     margin-top: 10px;
@@ -26,6 +26,12 @@ a {
 #header nav {
     display: inline-block;
     float: right;
+    position: sticky;
+}
+    .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
 }
 
 #header nav>ul {
