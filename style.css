@@ -75,26 +75,6 @@ a {
     display: flex;
   }
 
-  /* Menu Level 2 */
-#header nav > ul > li > ul {
-    background-color: rgb(243, 255, 233);
-
-    position: absolute;
-    right: 0;
-    top: 148%;
-
-    width: max-content;
-
-    display: none;
-    flex-direction: column;
-    padding: 5px;
-
-    > li > a {
-      padding: 10px 90px 10px 10px;
-    }
-  }
-
-
  /* Menu Level 2 */
 #header nav > ul > li > ul {
     background-color: rgb(255, 255, 255);
@@ -116,7 +96,29 @@ a {
   
 #header nav > ul > li:hover > ul {
     display: flex;
-}
+} 
+    /* menu level 3 */
+    #header nav > ul > li > ul > li > ul {
+      background-color: rgb(255, 255, 255);
+  
+      position: absolute;
+      right: 180px;
+      top: 100%;
+  
+      width: max-content;
+  
+      display: none;
+      flex-direction: column;
+      padding: 5px;
+  
+      > li > a {
+      padding: 10px 90px 10px 10px;
+      }
+    }
+    
+  #header nav > ul > li > ul > li:hover > ul {
+      display: flex;
+  }
 
   /* main  */
 #main-area{
